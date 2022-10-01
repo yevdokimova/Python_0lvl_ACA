@@ -1,16 +1,22 @@
-user_num = int(input("Please enter the number: "))
-
-
 def factorial(num):
-    fact = 1
     i = 1
+    result = 1
     while i <= num:
-        if num == 0:
-            fact = 1
-            break
-        fact = fact * i
+        result *= i
         i += 1
-    return fact
+
+    return result
 
 
-print(factorial(user_num))
+# solution 2
+
+# def factorial(num):
+#     result = 1
+#
+#     for i in range(2, n+1):
+#         result *= 1
+#
+#     return result
+
+
+print(factorial(int(input('Enter a number: '))))
